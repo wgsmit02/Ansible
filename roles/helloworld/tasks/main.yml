@@ -18,7 +18,12 @@
     group: root
     mode: 0644
     
-- name: Starting the HelloWold node service
+- name: Starting the HelloWorld node service
   service:
     name: helloworld
     state: started
+
+- name: restart helloworld
+  service: 
+    name: helloworld 
+    state: restarted
