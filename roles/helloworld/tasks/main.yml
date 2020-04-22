@@ -2,6 +2,7 @@
 # tasks file for helloworld
 
 - name: Copying the application file
+  copy:
     src: helloworld.js
     dest: /home/ec2-user/
     owner: ec2-user
@@ -19,5 +20,5 @@
     
 - name: Starting the HelloWold node service
   service:
-    name: hellowworld
-    state: restarted
+    name: helloworld
+    state: started
