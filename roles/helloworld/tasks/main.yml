@@ -8,7 +8,7 @@
     owner: ec2-user
     group: ec2-user
     mode: 0644
-  notify: restart helloworld
+  notify: restart helloworldg
 
 - name: Copying the upstart file
   copy:
